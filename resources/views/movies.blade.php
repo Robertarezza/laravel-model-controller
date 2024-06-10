@@ -15,7 +15,7 @@
                     <h5 class="card-title text-center">{{ $movie->title }}</h5>
                     <p class="card-text">{{ $movie->original_title }}</p>
                     <p class="card-text">{{ $movie->nationality }}</p>
-                    <p class="card-text">Data d'uscita:{{ $movie->date }}</p>
+                    <p class="card-text">Data d'uscita: {{ date('d/m/Y', strtotime($movie->date)) }}</p>
                     <h4>
                         Voto:
                         @for ($i = 1; $i <= 5; $i++) <i class="fa-solid fa-star{{ $i <= ceil($movie->vote_average / 2) ? 'star-filled' : '' }}"></i>
