@@ -9,5 +9,5 @@ php artisan make:model Movie
 php artisan make:controller HomeController
 7 - [x]All’interno della funzione index() del controller, recuperate tutti i film dal database e passateli alla view, che quindi li visualizzerà a schermo, tramite delle card.
 BONUS:
-Stilare il layout nei dettagli con Sass
+[x]Stilare il layout nei dettagli con Sass
 PS: vi allego anche lo schema di passaggi che abbiamo creato durante la lezione. Mettetemi una bella reaction però  :occhiolino:

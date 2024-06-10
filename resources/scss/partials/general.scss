@@ -2,13 +2,26 @@
 .my_title{
     text-align: center;
     margin: 10px;
+    font-size: 100px;
+    color: white;
+    font-weight: 800;
+    font-style: oblique;
 }
 
-.fa-solid {
-   color: white;
-   border: 1px solid black;
+ .fa-solid  {    
+    color: yellow;
+//    border: 1px solid black;
  }
 
  .star-filled {
    color: yellow;
+ }
+
+ body {
+    background-image: url("../img/sfondo.png");
+ }
+
+ .my_title_home {
+    font-size: 150px;
+    margin-top: 200px;
  }

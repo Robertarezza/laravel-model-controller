@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<h1 class="my_title  m-5">Movies</h1>
+<h1 class="my_title">Movies</h1>
 <div class="container">
     <div class="row row-lg-4 d-flex">
         @foreach ($moviesList as $index => $movie)
@@ -18,7 +18,7 @@
                     <p class="card-text">Data d'uscita:{{ $movie->date }}</p>
                     <h4>
                         Voto:
-                        @for ($i = 1; $i <= 5; $i++) <i class="fa-solid fa-star {{ $i <= ceil($movie->vote_average / 2) ? 'star-filled' : '' }}"></i>
+                        @for ($i = 1; $i <= 5; $i++) <i class="fa-solid fa-star{{ $i <= ceil($movie->vote_average / 2) ? 'star-filled' : '' }}"></i>
                             @endfor
                     </h4>
                 </div>
