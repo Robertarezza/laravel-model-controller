@@ -3,11 +3,11 @@ Oggi facciamo la nostra prima vera interazione con il database utilizzando l’O
 2 - [x]tramite phpMyAdmin create un nuovo database laravel_model_controller
 3 - [x]Importate nel vostro database la tabella movies in allegato
 4 - [x]inserite le vostre credenziali per il database nel file .env
-5 - Create un model Movie
+5 - [x]Create un model Movie
 php artisan make:model Movie
-6 - Create un controller che gestirà la rotta /
+6 - [x]Create un controller che gestirà la rotta /
 php artisan make:controller HomeController
-7 - All’interno della funzione index() del controller, recuperate tutti i film dal database e passateli alla view, che quindi li visualizzerà a schermo, tramite delle card.
+7 - [x]All’interno della funzione index() del controller, recuperate tutti i film dal database e passateli alla view, che quindi li visualizzerà a schermo, tramite delle card.
 BONUS:
 Stilare il layout nei dettagli con Sass
 PS: vi allego anche lo schema di passaggi che abbiamo creato durante la lezione. Mettetemi una bella reaction però  :occhiolino:
