@@ -10,7 +10,7 @@
                     offset-lg-4
                 @endif">
             <div class="card" style="width: 18rem;">
-                <img src="{{$movie->image}}" class="card-img-top" alt="...">
+                <img src="{{$movie->image}}" class="card-img-top" alt="{{$movie->title}}">
                 <div class="card-body">
                     <h5 class="card-title text-center">{{ $movie->title }}</h5>
                     <p class="card-text">{{ $movie->original_title }}</p>
@@ -18,14 +18,14 @@
                     <p class="card-text">Data d'uscita: {{ date('d/m/Y', strtotime($movie->date)) }}</p>
                     <h4>
                         Voto:
-                        @for ($i = 1; $i <= 5; $i++) <i class="fa-solid fa-star{{ $i <= ceil($movie->vote_average / 2) ? 'star-filled' : '' }}"></i>
+                        @for ($i = 1; $i <= 5; $i++) <i class="fa-solid fa-star{{ $i <= ceil($movie->vote_average / 2) ? ' filled' : '' }}"></i>
                             @endfor
                     </h4>
+
                 </div>
             </div>
         </div>
         @endforeach
     </div>
 </div>
-
 @endsection
